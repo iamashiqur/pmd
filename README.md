@@ -1,7 +1,3 @@
-# Figma File
-
-Figma [Figma](<https://www.figma.com/design/HnWtkMJ5VGAWFtWBo8RZ5b/Byte-Dash-Development-(Copy)?node-id=0-1&node-type=canvas&t=pV6SmSwyHCYCxevV-0>)
-
 ## Getting Started
 
 ```bash
