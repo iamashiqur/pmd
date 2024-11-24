@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import CustomBtn from '@/app/components/CustomBtn'
 import { sideNavbar } from '@/type'
 import Link from 'next/link'
@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <div className="mr-5 flex w-full max-w-64 flex-col justify-between pt-5 lg:flex-shrink-0">
       <div>
-        <Link href={'/'} className="block mb-5">
+        <Link href={'/'} className="mb-5 block">
           PMD
         </Link>
 
@@ -22,8 +22,9 @@ const Sidebar = () => {
                 <CustomBtn
                   LinkHref={i.path}
                   isLink={true}
-                  LinkClassName={`flex items-center text-sm font-medium text-white gap-2 hover:text-white capitalize ${location !== i.path && 'withoutGradientBtn'
-                    }`}
+                  LinkClassName={`flex items-center text-sm font-medium text-white gap-2 hover:text-white capitalize ${
+                    location !== i.path && 'withoutGradientBtn'
+                  }`}
                 >
                   <i.icon className="icon-class size-4" strokeWidth={2} />
                   {i.name}
@@ -33,8 +34,6 @@ const Sidebar = () => {
           </ul>
         </nav>
       </div>
-
-
     </div>
   )
 }

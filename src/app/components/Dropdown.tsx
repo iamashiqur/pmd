@@ -1,15 +1,15 @@
-"use client";
-import { sideNavbar } from '@/type';
-import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import Link from 'next/link';
-import { Fragment } from 'react';
+'use client'
+import { sideNavbar } from '@/type'
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
+import { Fragment } from 'react'
 
 const Dropdown = () => {
   return (
     <Menu as="div" className="relative inline-block text-left md:hidden">
       <div>
-        <MenuButton className="inline-flex justify-center w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
+        <MenuButton className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">
           Menu Items
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5 text-gray-400" aria-hidden="true" />
         </MenuButton>
@@ -26,25 +26,18 @@ const Dropdown = () => {
       >
         <MenuItems className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            {
-              sideNavbar.map((i, index) => (
-                <MenuItem key={index}>
-                  <Link
-                    href={i.path}
-                    className='block px-3 py-2 hover:bg-clr-f1'
-                  >
-                    {i.name}
-                  </Link>
-
-                </MenuItem>
-              ))
-            }
-
+            {sideNavbar.map((i, index) => (
+              <MenuItem key={index}>
+                <Link href={i.path} className="block px-3 py-2 hover:bg-clr-f1">
+                  {i.name}
+                </Link>
+              </MenuItem>
+            ))}
           </div>
         </MenuItems>
       </Transition>
     </Menu>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown
