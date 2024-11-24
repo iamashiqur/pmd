@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.withoutGradientBtn {
+  background: transparent;
+  border: transparent;
+  color: #7e828b;
+}
+/* Global Styles */
+html.light {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+html.dark {
+  background-color: #181818;
+  color: #fff;
+}

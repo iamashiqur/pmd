@@ -1,0 +1,14 @@
+node_modules
+.env
+.env.local
+.vscode
+dist/
+assets/
+public
+.husky
+.vscode
+.eslintrc.json
+tsconfig.json
+package.json
+README.md
+CHANGELOG.md
